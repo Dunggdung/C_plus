@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+
+  <p>Tên: Phạm Nguyễn Thùy Dung </p>
+  <p>Mã số sinh viên:6151071003</p>
+
+<h1>Registration Details</h1>
+
+<form>
+
+    <label for="university">University:</label>
+    <input type="text" id="university" name="university" value=""><br><br>
+
+    <label for="institute">Institute:</label>
+    <input type="text" id="institute" name="institute" value=""><br><br>
+
+    <label for="branch">Branch:</label>
+  <select id="branch" name="branch">
+    <option value="select">--select--</option>
+    <option value="hcmcity">Ho Chi Minh City</option>
+    <option value="hanoicity">Ha Noi City</option>
+  </select><br><br>
+
+    <label for="degree">Degree:</label>
+  <select id="degree" name="degree">
+    <option value="select">--select--</option>
+    <option value="highschool">High School</option>
+    <option value="college ">College </option>
+    <option value="university ">University </option>
+  </select>
+    <input type="radio" id="pursuing" name="pursuing" value="pursuing">
+    <label for="pursuing">Pursuing</label>
+    <input type="radio" id="completed" name="completed" value="completed">
+    <label for="completed">Completed</label><br><br>
+
+    <label for="avarage">Avarage CPI:</label>
+    <input type="number" id="avarage" name="avarage" min="1" max="10">
+    <label for="upto">Upto:</label>
+    <input type="number" id="upto" name="upto" min="1" max="8">
+    <label for="semester">The Semester</label>
+    <br><br>
+
+    <label for="experience">Experience:</label>
+    <input type="number" id="experience" name="experience" min="1" max="20">
+    <label for="year">Years</label>
+    <br><br>
+
+    <label for="link">Your Website Or Blog:</label>
+    <input type="url" id="link" name="link" value="http:// "><br><br>
+
+  <input type="submit" value="Submit">
+</form> 
+</body>
+</html>
