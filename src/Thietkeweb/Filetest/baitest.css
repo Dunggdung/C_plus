@@ -1,0 +1,39 @@
+table {
+    position: relative;
+    /* left:270px;  */
+    left:19%; 
+    color:white;
+    background-color:rgb(143, 143, 252);
+    font-family: "Times New Roman", Times, serif;
+    font-size:25px;
+    width: 60%
+}
+table, th, td {
+    border: 2px solid rgb(143, 143, 252);
+    border-collapse:collapse;
+    padding: 10px;
+}
+th {
+    font-size:30px;
+}
+input {
+    height: 25px;
+    width: 70%
+}
+.name {
+    text-align: right;
+    width:40%;
+}
+td{
+    width:50%;
+}
+select{
+    height: 25px;
+    width: 45%;
+    font-size:20px;
+}
+#degree{
+    height:5px;
+    /* width: 30%; */
+    /* font-size:20px; */
+}

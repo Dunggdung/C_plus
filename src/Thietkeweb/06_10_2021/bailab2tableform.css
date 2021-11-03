@@ -1,0 +1,27 @@
+td{
+    width:50%
+}
+table {
+    position: relative;
+    left:180px; 
+    color:black;
+    /* padding: 20px; */
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    width: 100%
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse:collapse;
+    padding: 2px;
+}
+#rong{
+    padding: 45px;
+}
+#name{
+    background-color: rgb(185, 214, 219)
+}
+#enter {
+    position: relative;
+    left:100px; 
+}

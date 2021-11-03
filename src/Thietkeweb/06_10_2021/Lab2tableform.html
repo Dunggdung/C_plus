@@ -1,0 +1,64 @@
+<!--Phạm Nguyễn Thùy Dung MSSV:6151071003-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <link rel="stylesheet" href="bailab2tableform.css">
+</head>
+<body>
+    <p>Tên: Phạm Nguyễn Thùy Dung </p>
+    <p>Mã số sinh viên:6151071003</p>
+<table style="width:50%">
+    <tr>
+        <th id ="name">Name</th>
+        <th id ="name">Value</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td><input type="text" name="name" value=""></td>
+        <!-- <td style="text-align: right"><img src="https://i.pinimg.com/236x/47/e9/fd/47e9fd79e282d55ffee6b35bd5c7d5a3.jpg" width=100%></td> -->
+    </tr>
+    <tr>
+        <td>Sex</td>
+        <td>
+            <input type="radio" id="male" name="Male" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="female" name="Female" value="Female">
+            <label for="Female">Female</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td>Eye color</td>
+        <td>
+            <select id="eye" name="eye">
+                <option value="green">Green</option>
+                <option value="brown">Brown</option>
+                <option value="blue ">Blue </option>
+                <option value="black ">Black </option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Check all that apply</td>
+        <td>
+            <input type="checkbox" id="height" name="height" value="height">
+            <label for="height">Over 6 feet tall</label><br>
+            <input type="checkbox" id="weight" name="weight" value="weight">
+            <label for="weight">Over 200 pounds</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">Describe your athletic ablility:</td>
+    </tr>
+    <tr>
+        <td colspan="2" id= "rong"></td>
+    </tr>
+    <tr id = "enter">
+        <td colspan="2"><input type="submit" value="Enter my information"></td>
+    </tr>
+    </table><br>
+</body>
+</html>

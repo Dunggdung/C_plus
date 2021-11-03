@@ -1,0 +1,20 @@
+table {
+    color:black;
+    padding: 0px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    width: 100%
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse:collapse;
+}
+.kid{
+    background-color:rgb(180, 219, 238)
+}
+.software{
+    background-color:rgb(226, 164, 223);
+}
+.engineer{
+    background-color:rgb(120, 153, 120)
+}

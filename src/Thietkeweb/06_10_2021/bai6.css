@@ -1,0 +1,11 @@
+table {
+    background-color: rgb(158, 187, 216);
+    color: black;
+    padding: 0px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    width: 100%
+}
+table, th, td {
+    border: 2px solid black;
+}

@@ -1,0 +1,37 @@
+#darkblue {
+  background-image: url(graphics/bkgd.gif);
+  padding: 10px;
+}
+#topright {
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  padding: 10px;
+  padding-left: 500px;
+}
+#topright,
+#topleft {
+  display: inline-block;
+  vertical-align: middle;
+}
+li {
+  display: inline;
+}
+a {
+  color: #2c36cc;
+  padding-left: 20px;
+}
+#navbar {
+  background-color: aquamarine;
+  padding: 3px;
+  margin: 0px;
+}
+#maincontent {
+  background-color: #f9e7a5;
+  text-align: center;
+  padding: 10px;
+}
+#footer {
+  background-color: blue;
+  padding: 5px;
+}

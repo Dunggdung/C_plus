@@ -1,0 +1,38 @@
+form {
+    position: relative;
+    /* left:270px;  */
+    left:15%; 
+    color:white;
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    width: 70%;
+    background-color:rgb(143, 143, 252);
+    
+}
+form {
+    border: 2px solid rgb(143, 143, 252);
+    border-collapse:collapse;
+}
+input{
+    position: relative;
+    left:250px; 
+    font-size: 20px;
+    height: 20px;
+}
+label{
+    position: relative;
+    right:-250px; 
+}
+select {
+    position: relative;
+    left:250px; 
+    font-size: 20px;
+    height: 25px;
+}
+#submit{
+    position: relative;
+    left:400px; 
+    font-size: 20px;
+    height: 30px;
+}

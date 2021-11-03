@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculate</title>
+    <script language="JavaScript">
+        function calCulateSum(){
+            let a = document.getElementById("number_a").value;
+            let b = document.getElementById("number_b").value;
+            let sum = parseInt(a) + parseInt(b);
+            document.getElementById("result").innerHTML = a + " + " + b + "=" + sum; 
+        }
+        function calCulateMulti(){
+            let a = document.getElementById("number_a").value;
+            let b = document.getElementById("number_b").value;
+            let mul = parseInt(a) * parseInt(b);
+            document.getElementById("result").innerHTML = a + " x " + b + "=" + mul; 
+        }
+        function calCulateMinus(){
+            let a = document.getElementById("number_a").value;
+            let b = document.getElementById("number_b").value;
+            let minus = parseInt(a) - parseInt(b);
+            document.getElementById("result").innerHTML = a + " - " + b + "=" + minus; 
+        }
+        function calCulateDivide(){
+            let a = document.getElementById("number_a").value;
+            let b = document.getElementById("number_b").value;
+            let divide = parseInt(a) / parseInt(b);
+            document.getElementById("result").innerHTML = a + " / " + b + " = " + divide; 
+        }
+    </script>
+    <script language="javascript" src="pt1.js"></script>
+    <script language="javascript" src="pt2.js"></script>
+</head>
+<body>
+    <label for="a">Nhap a: </label>
+    <input type="text" id="number_a"><br>
+    <label for="a">Nhap b: </label>
+    <input type="text" id="number_b"><br>
+    <label for="c">Nhap c: </label>
+    <input type="text" id="number_c"><br>
+    <button type="button" onclick="calCulateSum()">SUM</button>
+    <button type="button" onclick="calCulateMinus()">MINUS</button>
+    <button type="button" onclick="calCulateMulti()">MULTIP</button>
+    <button type="button" onclick="calCulateDivide()">DIVIDE</button>
+    <button type="button" onclick="eQuation1()">ONE-SOLUTION EQUATION</button>
+    <button type="button" onclick="eQuation2()">TWO-SOLUTION EQUATION</button>
+    <div id="result"></div>
+</body>
+</html>
+<!--function eQuation1(){
+    let a = document.getElementById("number_a").value;
+    let b = document.getElementById("number_b").value;
+    let c = document.getElementById("number_c").value;
+    let x = (parseInt(c)-parseInt(b))/parseInt(a);
+    document.getElementById("result").innerHTML = "Solution of the equation of degree 1" + " = " + x;
+}
+
+    function eQuation2(){
+    let a = document.getElementById("number_a").value;
+    let b = document.getElementById("number_b").value;
+    let c = document.getElementById("number_c").value;
+    if(parseInt(a) == 0) {
+         
+        if(parseInt(b) == 0) {
+            if (parseInt(c) == 0) {
+                document.getElementById("result").innerHTML = "countless solutions";     
+            } else {
+                document.getElementById("result").innerHTML = " solutions"; 
+            }
+        } else {
+            let x = parseInt(-c) / parseInt(b);
+            document.getElementById("result").innerHTML = "x = " + x; 
+        }
+    } else {
+        var delta = parseInt(b)*parseInt(b) - 4*parseInt(a)*parseInt(c);
+        if(delta > 0) {
+            var x1 = (parseInt(-b)+Math.sqrt(delta))/(2*parseInt(a));
+            var x2 = (parseInt(-b)-Math.sqrt(delta))/(2*parseInt(a));
+            document.getElementById("result").innerHTML = "x1 = " + x1 + "\nx2 = " + x2; 
+        } else if ( delta == 0) {
+            var sum = parseInt(-b)/2*parseInt(a);
+            document.getElementById("result").innerHTML = "Double x = " + sum;
+        } else {
+            document.getElementById("result").innerHTML = "countless solutions"; 
+        }
+    }
+}-->
