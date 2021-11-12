@@ -11,8 +11,6 @@ class vector{
         ~vector();
         void add();
         void display();
-        bool check(vector<student> &b);
-        friend vector operator +(vector &a,vector &b);
         void operator =(vector<student> &a);
 };
 template<class student>
@@ -39,17 +37,6 @@ void vector<student>::add(){
     }
 }
 template<class student>
-bool vector<student>::check(vector<student> &b){
-    return n==b.n;
-}
-// template<class student>
-vector operator +(vector &a,vector &b){
-    vector c = a;
-    for (int i=0; i<a.n; i++)
-        c.v[i]=a.v[i]+b.v[i];
-    return c;
-}
-template<class student>
 void vector<student>:: operator =(vector<student> &a){
     n = a.n;
     v = new student [n];
@@ -65,15 +52,11 @@ void vector<student>::display(){
 int main(){
     int n;
     cout<<"Enter number of elements in vector A: "; cin>>n;
-    vector a(n);
+    vector<int> a(n);
     a.add();
     a.display();
     cout<<"Enter number of elements in vector B: "; cin>>n;
-    vector b(n);
+    vector <int> b(n);
     b.add();
     b.display();
-    cout<<"Summation of A and B: ";
-    if(a.check(b)){
-        (a+b).display();
-    }else   cout<<"Can not calculate"<<endl;
 }
