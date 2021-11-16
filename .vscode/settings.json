@@ -65,6 +65,7 @@
         "atomic": "cpp",
         "compare": "cpp",
         "*.tcc": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "unordered_set": "cpp"
     }
 }

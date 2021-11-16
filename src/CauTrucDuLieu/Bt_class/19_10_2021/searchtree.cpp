@@ -28,6 +28,7 @@ void BST::insert(Node* &root,Item v){
         root = createNode(v);
     }
     else {
+        Node root = new Node;
         if (v < root->data)
             insert(root->left,v);
         else if (v > root->data)

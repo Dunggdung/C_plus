@@ -4,7 +4,30 @@ struct Node {
     Node *left;
     Node *right;
 };
-class BST
+class BinaryTree {
+    public:
+        BinaryTree ();
+        BinaryTree(Item v);
+        Node* createNode(Item v);
+        bool isEmpty();
+        void insertLeft(Node * p, Item v);
+        void insertRight(Node * p, Item v);
+        Item deleteLeft(Node * p);
+        Item deleteRight(Node * p);
+        void preOrder (Node* root);
+        void inOrder (Node* root);
+        void postOrder (Node* root);
+        Node* search (Node* p; Item v);
+        void deleteTree(Node* &root);
+}
+Node* BinaryTree ::createNode(Item v){
+    Node *q = new Node;
+    q->data = v;
+    q->left = NULL;
+    q->right = NULL;
+    return q;
+}
+
 Item BinaryTree::deleteRight(Node* p){
     if(p == NULL){
         cout<<"Error"<<endl;
@@ -81,13 +104,13 @@ void BinaryTree ::posOrder (Node* root){
     cout << root->data ;
     }
 }
-void BinaryTree ::posOrder (Node* root){
-    if (root != NULL){
-    posOrder (root->right);
-    posOrder (root->left);
-    cout << root->data ;
-    }
-}
+// void BinaryTree ::posOrder (Node* root){
+//     if (root != NULL){
+//     posOrder (root->right);
+//     posOrder (root->left);
+//     cout << root->data ;
+//     }
+// }
 Node* BinaryTree::search (Node* p,Item v){
     if (p == NULL)
         return NULL;
