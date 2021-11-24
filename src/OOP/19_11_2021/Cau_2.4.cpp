@@ -4,7 +4,7 @@ using namespace std;
 
 class Media{
     protected:
-        string Ten;
+        string Ten;// ehe meoo mèo méo meo mèo meo
         float Gia;
     public: 
         Media();
